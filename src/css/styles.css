@@ -2,6 +2,7 @@
     --cor-cinsa: #b2babb;
     --cor-black-fundo: #121212;
     --cor-purple: #b24cfc;
+    --background-purple-acizentado: #4D4552;
 }
 
 *{
@@ -11,7 +12,7 @@
 }
 
 body{
-    background-color: var(--cor-cinsa);
+    background-color: var(--cor-cinsa); 
 }
 
 #corpo{
@@ -70,14 +71,63 @@ header h1{
     padding: 10px 15px; 
     text-decoration: none; 
     color: #333; 
-  }
+}
   
-  #menu .sub-list li:hover {
+#menu .sub-list li:hover {
     background-color: #ddd; 
     color: var(--cor-purple);
-  }
-
-section#historia{
-    background-color: var(--cor-cinsa);
 }
 
+#menu .sub-list li a{
+    text-decoration: none; 
+    color: #333; 
+}
+
+#menu .sub-list li a:hover{
+    color: var(--cor-purple);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+    text-align: center;
+    background-color: var(--background-purple-acizentado);
+}
+
+/*
+section.background2{   
+    background-color: var(--background-purple-acizentado);
+    color: white;
+} */
+
+section .titulo-section{    
+    text-align: center;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 2px black;
+    color: white; 
+    text-transform: uppercase;
+}
+
+p, li.liparagrafo, section h4, section h5{
+    display: block;
+    margin: 10px auto;
+    width: 800px;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+}
+
+p.first-p-section{
+    margin-top: 15px;
+}
+
+img#pegaminhoHistoria{
+    display: block;
+    margin: auto;
+}
+
+section h4, section h5{
+    font-size: 1.3em;
+}
