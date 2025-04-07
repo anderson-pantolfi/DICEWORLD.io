@@ -46,3 +46,9 @@ menuDesevolvimento.addEventListener("mouseleave", () => {
 subMenuDesevolvimento.addEventListener("mouseleave", () => {
     subMenuDesevolvimento.style.display = "none";
 });
+window.addEventListener('scroll', () => {
+    const hero = document.querySelector('.hero');
+    const scrollY = window.scrollY;
+    // Ajustando a posição do fundo da imagem com base no scroll
+    hero.style.backgroundPositionY = `${scrollY * 0.8}px`; // Ajuste a multiplicação para maior/menor movimento
+});
