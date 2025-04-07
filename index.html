@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="src/css/styles.css">
     <title>Dice WORLD</title>
 </head>
@@ -13,7 +14,7 @@
             <h1>DICE WORLD</h1>
             <nav id="menu">
                 <ul>
-                    <li id="aboutGame">SOBRE O JOGO
+                    <li id="aboutGame"><span class="efecthovermouse">SOBRE O JOGO</span>
                         <ul class="sub-list" id="subMenuAboutGame">
                             <li class="item-menu"><a href="#introducao">introducao</a></li>
                             <li class="item-menu"><a href="#historia">historia</a></li>
@@ -32,7 +33,7 @@
                         </ul>
                     </li>
 
-                    <li id="desevolvimento" class="item-menu">desevolvimento game
+                    <li id="desevolvimento" class="item-menu">desevolvimento do game
                         <ul class="sub-list" id="subMenuDesevolvimento">
                             <li class="item-menu"><a href="#atibuições">atribuições</a></li>
                             <li class="item-menu"><a href="#cronograma">cronograma</a></li>                           
@@ -42,7 +43,20 @@
             </nav>
         </header>
 
-        <section id="introducao">
+        <section class="hero">
+            <div class="hero-text">
+              <h1>DiceWorld</h1>
+              <p>Explore um mundo de fantasia vibrante, enfrente criaturas sombrias e colete os fragmentos do destino. A jornada para restaurar Altaris começou!</p>
+            </div>
+            <div class="hero-img">
+                <video autoplay loop muted playsinline>
+                    <source src="src/videos/gameplay_teste.mp4" type="video/mp4">
+                    Seu navegador não suporta vídeos HTML5.
+                  </video>
+            </div>
+          </section>
+
+        <section id="introducao" class="content-section">
             <h1 class="titulo-section">introducao</h1>
 
             <p class="first-p-section">
@@ -55,8 +69,8 @@
 
             <p>
                 Em meio a essa desordem crescente, uma faísca de esperança surge. Convocado pelo
-                Rei de Altaris, você assume o papel de um herói destemido – o leal Guerreiro, o estudioso
-                Mago ou o astuto Ladino – cada um com habilidades únicas e uma motivação pessoal
+                Rei de Altaris, você assume o papel de um herói destemido - o leal Guerreiro, o estudioso
+                Mago ou o astuto Ladino - cada um com habilidades únicas e uma motivação pessoal
                 para enfrentar a escuridão.
             </p>
 
@@ -74,11 +88,11 @@
             </p>
         </section>
 
-        <section id="historia" class="background1">
+        <section id="historia" class="content-section" class="background1">
             <h1 class="titulo-section">HISTÓRIA</h1>
                 <img src="src/image/pergaminho-historia.png" width="700px" id="pegaminhoHistoria">
         </section>
-        <section id="gameplay" class="background2">
+        <section id="gameplay" class="content-section">
             <h1 class="titulo-section">GAMEPLAY</h1>
             <p class="first-p-section">
                 A aventura em Altaris coloca o jogador na pele de um dos três bravos heróis (Guerreiro,
@@ -163,7 +177,7 @@
             </p>
         </section>
 
-        <section id="objetivo">
+        <section id="objetivo" class="content-section">
             <h1 class="titulo-section">objetivo</h1>
 
             <p class="first-p-section">
@@ -208,7 +222,7 @@
             </ol>
         </section>
         
-        <section id="universo">
+        <section id="universo" class="content-section">
             <h1 class="titulo-section">universo</h1>
 
             <p class="first-p-section">
@@ -271,9 +285,13 @@
                 Dados não é apenas uma luta contra Dardarios e seus lacaios, mas também uma
                 busca pela restauração da própria essência de Altaris.
             </P>
+
+            <img src="src/image/cenario1.jpg">
+            <img src="src/image/cenario2.jpg">
+            <img src="src/image/cenario3.jpg">
         </section>
 
-        <section id="herois">
+        <section id="herois" class="content-section">
             <h1 class="titulo-section">HEROIS</h1>
 
             <H4 class="classperson">O Guerreiro: Kaelen, o Escudo Leal</H4>
@@ -297,6 +315,13 @@
                 com a esperança de que, ao recuperar os Dados, poderá dissipar a maldição que assola
                 Altaris e trazer de volta a luz que se apagou.
             </P>
+
+            <div class="imagepersonagemcontent">
+                <div class="imagepersonagem">
+                    <h6>Guerreiro</h6>
+                    <img src="src/image/Cavaleiro.png">
+                </div>
+            </div>
 
             <h4 class="classperson">O Mago: Elara, a Teórica Arcana</h4>
 
@@ -328,6 +353,13 @@
                 diga que ela previu o roubo em sonhos fragmentados, e agora busca respostas nos
                 fragmentos dos Dados.
             </p>
+
+            <div class="imagepersonagemcontent">
+                <div class="imagepersonagem">
+                    <h6>mago</h6>
+                    <img src="src/image/Mago.png">
+                </div>
+            </div>
 
             <h4 class="classperson">O Ladino: Zephyr, a Sombra Oportunista</h4>
 
@@ -361,9 +393,15 @@
                 sobrevivência em um mundo que se desfaz.
             </p>
 
+            <div class="imagepersonagemcontent">
+                <div class="imagepersonagem ladino">
+                    <h6>Ladino</h6>
+                    <img src="src/image/ladino.png">
+                </div>
+            </div>
         </section>
 
-        <section id="inimigos">
+        <section id="inimigos" class="content-section">
             <h1 class="titulo-section">inimigos</h1>
 
             <h4 class="classperson">Dardarios</h4>
@@ -379,9 +417,32 @@
             <p>O objetivo final de Dardarios vai além da simples destruição. Ele busca remodelar Altaris à sua imagem, um reino onde o acaso e a vontade individual reinem supremos, livre das amarras do destino predeterminado. Ele se vê como um libertador, mesmo que seus métodos causem sofrimento e anarquia.</p>
 
             <p>No confronto final, Dardarios não será apenas um inimigo com ataques poderosos. Ele personificará a própria instabilidade do caos, com habilidades que manipulam a realidade de maneiras imprevisíveis, testando a capacidade dos heróis de se adaptarem ao inesperado. Sua derrota não será apenas física, mas simbólica: a reafirmação de que a ordem e a esperança podem florescer mesmo após a mais profunda perturbação</p>
+            
+            <div class="imagepersonagemcontent">
+                <div class="imagepersonagem">
+                    <h6>Dardarios</h6>
+                    <img src="src/image/boss.gif">
+                </div>
+
+                <div class="imagepersonagem">
+                    <h6>Esqueleto</h6>
+                    <img src="src/image/esqueleto.gif">
+                </div>
+
+                <div class="imagepersonagem">
+                    <h6>goblin</h6>
+                    <img src="src/image/goblin.gif">
+                </div>
+
+                <div class="imagepersonagem">
+                    <h6>fantasma</h6>
+                    <img src="src/image/fantasma 8bit.gif">
+                </div>
+            </div>
+        
         </section>
 
-        <section id="controles">
+        <section id="controles" class="content-section">
             <h1 class="titulo-section">controles</h1>
 
             <p class="first-p-section">A interação do jogador com o mundo de Altaris será feita através de controles intuitivos e diretos no teclado e mouse:</p>
@@ -402,7 +463,7 @@
 
         </section>
 
-        <section id="camera">
+        <section id="camera" class="content-section">
             <h1 class="titulo-section">camera</h1>
 
             <p class="first-p-section">A câmera do jogo adotará uma perspectiva 2D com acompanhamento suave do personagem. Isso significa que o ponto de vista principal seguirá os movimentos do jogador horizontalmente e, possivelmente, verticalmente dentro de certos limites da tela. O objetivo é manter o personagem sempre no foco da ação, proporcionando uma visão clara dos arredores imediatos, plataformas à frente e inimigos próximos.</p>
@@ -418,11 +479,22 @@
             <p>Possíveis Ajustes: Em momentos específicos, como em combates contra chefes maiores ou em áreas com designs verticais mais acentuados, a câmera pode se ajustar ligeiramente para enquadrar melhor a ação ou o cenário, mas sempre mantendo o personagem como ponto de referência principal.</p>
         </section>
 
-        <section id="cronograma">
+        <section id="cronograma" class="content-section">
+            <h1 class="titulo-section">Cronograma</h1>
+            <img src="src/image/full/s.PNG">
         </section>
 
-        <section id="atibuições">
+        <section id="atibuições" class="content-section">
+            <h1 class="titulo-section">ATRIBUIÇÕES</h1>
+
+            <h5>Moisés Henrique Campanholo da Silva 114518</h5>
+            <h5>Felipe Apolinário de Souza 114771</h5>
+            <h5>João Victor Marquesan 114610 </h5>
+            <h5>Bruno Otávio Passini 115660</h5>
+            <h5>Anderson Pantolfi Moraes 114426</h5>
+            <h5>Gabriel Vinícius Krebski 115442</h5>
         </section>
+
         <script src="src/js/script.js"></script>
     </div>
 </body>
